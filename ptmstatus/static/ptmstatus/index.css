@@ -1,0 +1,13 @@
+table {
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 0.5px solid black;
+}
+
+.main {
+    border: 1px solid black;
+}

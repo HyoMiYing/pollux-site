@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="../../static/ptmstatus/index.css">
+<table>
+    <tr class="main">
+        <th>ptm_id</th>
+        <th>pmg_id</th>
+        <th>ptm_rf_id</th>
+        <th>last_status_time</th>
+        <th>last_touch_time</th>
+        <th>dimming_value</th>
+        <th>last_access_ptm_time</th>
+        <th>current_consumption</th>
+        <th>cummulative_consumption</th>
+        <th>critical_cnt</th>
+        <th>error_cnt</th>
+        <th>warning_cnt</th>
+        <th>info_cnt</th>
+        <th>dimming_mode</th>
+        <th>i_rms</th>
+        <th>u_rms</th>
+        <th>p_w</th>
+        <th>cos_fi</th>
+        <th>temp</th>
+        <th>luxmeter_value</th>
+        <th>luxmeter_value_time</th>
+    </tr>
+    {% for object in data %}
+    <tr class="not-main">
+        <td>{{ object.ptm_id }}</td>
+        <td>{{ object.pmg_id }}</td>
+        <td>{{ object.ptm_rf_id }}</td>
+        <td>{{ object.last_status_time }}</td>
+        <td>{{ object.last_touch_time }}</td>
+        <td>{{ object.dimming_value }}</td>
+        <td>{{ object.last_access_ptm_time }}</td>
+        <td>{{ object.current_consumption }}</td>
+        <td>{{ object.critical_cnt }}</td>
+        <td>{{ object.error_cnt }}</td>
+        <td>{{ object.warning_cnt }}</td>
+        <td>{{ object.info_cnt }}</td>
+        <td>{{ object.dimming_mode }}</td>
+        <td>{{ object.i_rms }}</td>
+        <td>{{ object.u_rms }}</td>
+        <td>{{ object.p_w }}</td>
+        <td>{{ object.cos_fi }}</td>
+        <td>{{ object.temp }}</td>
+        <td>{{ object.luxmeter_value }}</td>
+        <td>{{ object.luxmeter_value_time }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
